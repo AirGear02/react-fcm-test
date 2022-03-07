@@ -1,3 +1,5 @@
+## Project for testing Firebase Cloud Messaging web push notifications
+Just create `.env` file with your firebase project credentials. You may use `.env.example`
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
