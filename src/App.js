@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { requestForToken} from './firebaseInit';
+import { useState } from 'react';
+import NotificationsContainer from './Components/Notifications/NotificationsContainer';
+import FcmTokenLabel from './Components/FcmTokenLabel';
 
 function App() {
+  const [token ,setToken] = useState('');
+  //receiving token
+  requestForToken(setToken);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FcmTokenLabel token={token} />
+      <NotificationsContainer />
     </div>
   );
 }

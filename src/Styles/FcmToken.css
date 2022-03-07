@@ -1,0 +1,27 @@
+.fcmWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    align-items: center;
+}
+
+.fcmWrapper img {
+    width: 25px;
+}
+
+.fcmWrapper label {
+    display: block;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fcmWrapper input {
+    height: 35px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0;
+
+}
